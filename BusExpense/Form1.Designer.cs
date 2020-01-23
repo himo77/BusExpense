@@ -33,11 +33,12 @@
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(558, 239);
+            this.btnCalculate.Location = new System.Drawing.Point(558, 208);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(136, 52);
             this.btnCalculate.TabIndex = 0;
@@ -60,17 +61,16 @@
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(136, 31);
             this.txtTotal.TabIndex = 2;
-            
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label1.Location = new System.Drawing.Point(204, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Number of bus trips";
-          
             // 
             // label2
             // 
@@ -81,18 +81,28 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Total spent";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(599, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 45);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtTrips);
             this.Controls.Add(this.btnCalculate);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Bus Expenses";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,6 +115,7 @@
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
